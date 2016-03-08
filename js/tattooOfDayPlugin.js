@@ -1,7 +1,6 @@
 (function ($) {
-    console.log(jQuery("main-container"));
     $.fn.tattooOfDayPlugin = function () {
-        console.log($("main-container"));
+
         var classMainContainer = "." + this.attr("class");
         var likeCount = "";
         var tattooImageUrl = "";
@@ -9,7 +8,6 @@
         var imageOwnerName = "";
         $.getJSON(
             "http://app.api.sta.tattoodo.com/v1/app/images?length=1&includes=user", function (data) {
-                console.log(data);
                 likeCount = data.data[0].like_count;
                 tattooImageUrl = data.data[0].url;
                 imageOwnerImageUrl = data.data[0].user.data.image_url;

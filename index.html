@@ -6,17 +6,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <!--<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>-->
+    <script src="js/discoverPlugin.js"></script>
     <script src="js/tattooOfDayPlugin.js"></script>
+    <script src="js/recentUploadsPlugin.js"></script>
+    <script src="js/timelinePlugin.js"></script>
     <link href="css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+
+
 </head>
 <body>
-    <div class="main-container">
+    <h1 class="main-headline">Widget Task#1</h1>
+    <div class="discover-main-container"></div>
+    <h1 class="main-headline">Widget Task#2</h1>
+    <div class="tattoo-of-day-main-container">
+    </div>
+    <h1 class="main-headline">Widget Task#3</h1>
+    <div class="recent-uploads-main-container">
+    </div>
+    <h1 class="main-headline">Widget Task#4</h1>
+    <div class="timeline-main-container">
     </div>
 
 </body>
 </html>
 <script>
     $(document).ready(function() {
-        $(".main-container").tattooOfDayPlugin();
+        $(".discover-main-container").discoverPlugin();
+        $(".tattoo-of-day-main-container").tattooOfDayPlugin();
+        $(".recent-uploads-main-container").recentUploadsPlugin();
+        $(".timeline-main-container").timelinePlugin();
     });
 </script>

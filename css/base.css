@@ -3360,7 +3360,7 @@
   font-family: "font-monserrat";
   font-face-src: url(../fonts/Montserrat-Hairline.otf);
 }
-/* line 11, ../assets/base.scss */
+/* line 13, ../assets/base.scss */
 body {
   font-size: 16px;
   color: #FFF;
@@ -3368,8 +3368,82 @@ body {
   background-color: black;
 }
 
-/* line 18, ../assets/base.scss */
-.main-container {
+/* line 20, ../assets/base.scss */
+.discover-main-container {
+  background: url("../images/background_search.png");
+  color: #FFF;
+  border-color: #FFF;
+  border-width: 10px;
+  border-style: solid;
+  overflow: hidden;
+  width: 687px;
+  max-width: 100%;
+  max-height: 93px;
+}
+/* line 31, ../assets/base.scss */
+.discover-main-container .left {
+  width: 40%;
+  float: left;
+}
+/* line 34, ../assets/base.scss */
+.discover-main-container .left h1 {
+  margin: 10px 20px 0px 20px;
+}
+/* line 37, ../assets/base.scss */
+.discover-main-container .left h2 {
+  margin: 10px 20px 20px 20px;
+  font-weight: 400;
+}
+/* line 43, ../assets/base.scss */
+.discover-main-container .right {
+  width: 40%;
+  float: left;
+  margin-top: 20px;
+}
+/* line 47, ../assets/base.scss */
+.discover-main-container .right input {
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  vertical-align: top;
+  height: 49px;
+}
+/* line 54, ../assets/base.scss */
+.discover-main-container .right input[type="text"] {
+  padding: 0px 10px 0px 5px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+/* line 59, ../assets/base.scss */
+.discover-main-container .right input[type="submit"] {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background: url("../images/search.png");
+  width: 60px;
+}
+
+@media screen and (max-width: 480px) {
+  /* line 71, ../assets/base.scss */
+  .discover-main-container {
+    height: 200px;
+    width: 93%;
+  }
+  /* line 74, ../assets/base.scss */
+  .discover-main-container div.left {
+    display: none;
+  }
+  /* line 77, ../assets/base.scss */
+  .discover-main-container div.right {
+    width: 100%;
+    padding-left: 20px;
+  }
+  /* line 80, ../assets/base.scss */
+  .discover-main-container div.right input[type="text"] {
+    width: 70%;
+  }
+}
+/* line 87, ../assets/base.scss */
+.tattoo-of-day-main-container {
   border-color: #FFF;
   border-width: 10px;
   border-style: solid;
@@ -3378,44 +3452,45 @@ body {
   -webkit-background-size: 400px 400px;
   background-size: 400px 400px;
   width: 400px;
+  max-width: 100%;
   height: 400px;
 }
-/* line 28, ../assets/base.scss */
-.main-container .tattoo-of-day-header {
+/* line 98, ../assets/base.scss */
+.tattoo-of-day-main-container .tattoo-of-day-header {
   position: absolute;
   top: 30%;
   width: 100%;
   color: #FFF;
   text-align: center;
 }
-/* line 39, ../assets/base.scss */
-.main-container .bottom-container {
+/* line 109, ../assets/base.scss */
+.tattoo-of-day-main-container .bottom-container {
   position: absolute;
   width: 100%;
   bottom: 20px;
   height: 40px;
 }
-/* line 44, ../assets/base.scss */
-.main-container .bottom-container .winner-teaser {
+/* line 114, ../assets/base.scss */
+.tattoo-of-day-main-container .bottom-container .winner-teaser {
   float: left;
   width: 35%;
   color: #FFF;
   height: 40px;
   margin-left: 20px;
 }
-/* line 50, ../assets/base.scss */
-.main-container .bottom-container .winner-teaser img {
+/* line 120, ../assets/base.scss */
+.tattoo-of-day-main-container .bottom-container .winner-teaser img {
   border-radius: 50%;
   height: 100%;
 }
-/* line 54, ../assets/base.scss */
-.main-container .bottom-container .winner-teaser span {
+/* line 124, ../assets/base.scss */
+.tattoo-of-day-main-container .bottom-container .winner-teaser span {
   top: 12px;
   position: absolute;
   margin-left: 15px;
 }
-/* line 62, ../assets/base.scss */
-.main-container .bottom-container a {
+/* line 132, ../assets/base.scss */
+.tattoo-of-day-main-container .bottom-container a {
   margin-right: 20px;
   float: right;
   height: 20px;
@@ -3429,7 +3504,260 @@ body {
   text-decoration: none;
 }
 
-/* line 80, ../assets/base.scss */
+/* line 150, ../assets/base.scss */
+.recent-uploads-main-container {
+  padding: 20px 40px 20px 40px;
+  width: 340px;
+  max-width: 100%;
+  background-color: #FFF;
+  color: black;
+}
+/* line 156, ../assets/base.scss */
+.recent-uploads-main-container .widget-header {
+  overflow: hidden;
+}
+/* line 159, ../assets/base.scss */
+.recent-uploads-main-container .widget-header h1 {
+  margin: 10px 0px 10px 0px;
+}
+/* line 162, ../assets/base.scss */
+.recent-uploads-main-container .widget-header .recent-uploads-headline {
+  width: 62%;
+  float: left;
+}
+/* line 167, ../assets/base.scss */
+.recent-uploads-main-container .widget-header .view-all {
+  width: 30%;
+  float: right;
+  text-align: right;
+}
+/* line 171, ../assets/base.scss */
+.recent-uploads-main-container .widget-header .view-all a {
+  text-decoration: none;
+  color: #7F7F7F;
+  font-size: 0.5em;
+}
+/* line 179, ../assets/base.scss */
+.recent-uploads-main-container .underline {
+  width: 30px;
+  height: 4px;
+  border: 0;
+  background: #a41a13;
+  margin-top: 0;
+}
+/* line 186, ../assets/base.scss */
+.recent-uploads-main-container .pictures-container {
+  width: 100%;
+  margin-top: 30px;
+}
+/* line 189, ../assets/base.scss */
+.recent-uploads-main-container .pictures-container .row-pics {
+  width: 100%;
+  display: block;
+  max-height: 133px;
+}
+/* line 193, ../assets/base.scss */
+.recent-uploads-main-container .pictures-container .row-pics .pic {
+  width: 33.3333333%;
+  display: table-cell;
+  vertical-align: top;
+}
+/* line 197, ../assets/base.scss */
+.recent-uploads-main-container .pictures-container .row-pics .pic img {
+  width: 100%;
+}
+
+/* line 206, ../assets/base.scss */
+.timeline-main-container .timeline {
+  list-style: none;
+  padding: 20px 0 20px;
+  position: relative;
+}
+/* line 212, ../assets/base.scss */
+.timeline-main-container .timeline:before {
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  content: " ";
+  width: 3px;
+  background-color: #a41a13;
+  left: 50%;
+  margin-left: -1.5px;
+}
+/* line 223, ../assets/base.scss */
+.timeline-main-container .timeline > li {
+  margin-bottom: 20px;
+  position: relative;
+}
+/* line 228, ../assets/base.scss */
+.timeline-main-container .timeline > li:before,
+.timeline-main-container .timeline > li:after {
+  content: " ";
+  display: table;
+}
+/* line 234, ../assets/base.scss */
+.timeline-main-container .timeline > li:after {
+  clear: both;
+}
+/* line 238, ../assets/base.scss */
+.timeline-main-container .timeline > li:before,
+.timeline-main-container .timeline > li:after {
+  content: " ";
+  display: table;
+}
+/* line 244, ../assets/base.scss */
+.timeline-main-container .timeline > li:after {
+  clear: both;
+}
+/* line 248, ../assets/base.scss */
+.timeline-main-container .timeline > li > .timeline-panel {
+  background-color: #FFF;
+  width: 40%;
+  float: left;
+  border: 1px solid #d4d4d4;
+  border-radius: 2px;
+  padding: 20px;
+  position: relative;
+  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+}
+/* line 258, ../assets/base.scss */
+.timeline-main-container .timeline > li > .timeline-panel img {
+  width: 100%;
+}
+/* line 263, ../assets/base.scss */
+.timeline-main-container .timeline > li > .timeline-panel:before {
+  position: absolute;
+  top: 26px;
+  right: -15px;
+  display: inline-block;
+  border-top: 15px solid transparent;
+  border-left: 15px solid #ccc;
+  border-right: 0 solid #ccc;
+  border-bottom: 15px solid transparent;
+  content: " ";
+}
+/* line 275, ../assets/base.scss */
+.timeline-main-container .timeline > li > .timeline-panel:after {
+  position: absolute;
+  top: 27px;
+  right: -14px;
+  display: inline-block;
+  border-top: 14px solid transparent;
+  border-left: 14px solid #fff;
+  border-right: 0 solid #fff;
+  border-bottom: 14px solid transparent;
+  content: " ";
+}
+/* line 287, ../assets/base.scss */
+.timeline-main-container .timeline > li > .timeline-badge {
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 1.4em;
+  text-align: center;
+  position: absolute;
+  top: 16px;
+  left: 50%;
+  margin-left: -25px;
+  background-color: #a41a13;
+  z-index: 100;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+/* line 306, ../assets/base.scss */
+.timeline-main-container .timeline > li.timeline-inverted > .timeline-panel {
+  float: right;
+}
+/* line 310, ../assets/base.scss */
+.timeline-main-container .timeline > li.timeline-inverted > .timeline-panel:before {
+  border-left-width: 0;
+  border-right-width: 15px;
+  left: -15px;
+  right: auto;
+}
+/* line 317, ../assets/base.scss */
+.timeline-main-container .timeline > li.timeline-inverted > .timeline-panel:after {
+  border-left-width: 0;
+  border-right-width: 14px;
+  left: -14px;
+  right: auto;
+}
+/* line 324, ../assets/base.scss */
+.timeline-main-container .timeline-badge.primary {
+  background-color: #2e6da4 !important;
+}
+/* line 328, ../assets/base.scss */
+.timeline-main-container .timeline-badge.success {
+  background-color: #3f903f !important;
+}
+/* line 332, ../assets/base.scss */
+.timeline-main-container .timeline-badge.warning {
+  background-color: #f0ad4e !important;
+}
+/* line 336, ../assets/base.scss */
+.timeline-main-container .timeline-badge.danger {
+  background-color: #d9534f !important;
+}
+/* line 340, ../assets/base.scss */
+.timeline-main-container .timeline-badge.info {
+  background-color: #5bc0de !important;
+}
+/* line 344, ../assets/base.scss */
+.timeline-main-container .timeline-title {
+  margin-top: 0;
+  color: inherit;
+}
+/* line 349, ../assets/base.scss */
+.timeline-main-container .timeline-body > p,
+.timeline-main-container .timeline-body > ul {
+  margin-bottom: 0;
+}
+/* line 354, ../assets/base.scss */
+.timeline-main-container .timeline-body > p + p {
+  margin-top: 5px;
+}
+@media (max-width: 767px) {
+  /* line 359, ../assets/base.scss */
+  .timeline-main-container ul.timeline:before {
+    left: 40px;
+  }
+  /* line 363, ../assets/base.scss */
+  .timeline-main-container ul.timeline > li > .timeline-panel {
+    width: calc(100% - 90px);
+    width: -moz-calc(100% - 90px);
+    width: -webkit-calc(100% - 90px);
+  }
+  /* line 369, ../assets/base.scss */
+  .timeline-main-container ul.timeline > li > .timeline-badge {
+    left: 15px;
+    margin-left: 0;
+    top: 16px;
+  }
+  /* line 375, ../assets/base.scss */
+  .timeline-main-container ul.timeline > li > .timeline-panel {
+    float: right;
+  }
+  /* line 379, ../assets/base.scss */
+  .timeline-main-container ul.timeline > li > .timeline-panel:before {
+    border-left-width: 0;
+    border-right-width: 15px;
+    left: -15px;
+    right: auto;
+  }
+  /* line 386, ../assets/base.scss */
+  .timeline-main-container ul.timeline > li > .timeline-panel:after {
+    border-left-width: 0;
+    border-right-width: 14px;
+    left: -14px;
+    right: auto;
+  }
+}
+
+/* line 395, ../assets/base.scss */
 .test-inivisble {
   display: none;
 }
