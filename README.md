@@ -26,3 +26,6 @@ And to render the widget it is only need to call the invoke from the empty div a
 
  Plugings are very re-usable, widgets can be added wherever is needed only by definig a div and invoking the plugin
 
+#TASK4
+For the task #4, I have implemented sort of a timeline which shows the lates tattoos from the app, using the same feed
+as in the task #3.
